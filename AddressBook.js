@@ -169,6 +169,22 @@ try
     console.log("not a duplicate entry");
     else
     console.log("duplicate entry");
+    //uc8 search person using city or state
+    //by city
+    console.log("");
+    console.log("Contact by City India")
+    function ContactByCity(contactDetailsArray)
+    {
+       if(contactDetailsArray.city=="India") 
+       console.log(contactDetailsArray.toString());
+        
+    }
+    contactDetailsArray.filter(ContactByCity);
+
+    //by state
+    console.log("Contact By State Maharashtra")
+    let citycontact =contactDetailsArray.filter((contact)=>contact.state.includes("Maharashtra"));
+    console.log(citycontact.toString());
  }
 
 catch(e)
