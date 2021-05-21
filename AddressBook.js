@@ -155,6 +155,20 @@ try
      }
      contactDetailsArray.reduce(findTotalContacts,1);
      console.log("Total number of contacts in contactdetails array  : "+totalContacts);
+      //uc7 check for duplicate value
+    let countForDuplicate=0;
+    function CheckForDuplicates(contact)
+    {
+      if(contact.firstName=="Kretika")
+      countForDuplicate++;
+      return countForDuplicate;
+    }
+    //using foreach checking the count for each contact
+    contactDetailsArray.forEach((contact)=>CheckForDuplicates(contact));
+    if(countForDuplicate==1)
+    console.log("not a duplicate entry");
+    else
+    console.log("duplicate entry");
  }
 
 catch(e)
