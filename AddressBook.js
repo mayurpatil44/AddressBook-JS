@@ -185,6 +185,22 @@ try
     console.log("Contact By State Maharashtra")
     let citycontact =contactDetailsArray.filter((contact)=>contact.state.includes("Maharashtra"));
     console.log(citycontact.toString());
+    //uc9 Contacts by city or State using map  
+    //by state
+    function CityMap(contact)
+    {
+        return contact.city + " -> " + contact.firstName + "  " + contact.lastName;
+    }
+    let addressCityMap= contactDetailsArray.map(CityMap);
+    console.log(addressCityMap);
+   
+    //by city
+    function StateMap(contactDetails)
+    {
+        return contactDetails.state + " -> " + contactDetails.firstName + "  " + contactDetails.lastName;
+    }
+    let addressStateMap= contactDetailsArray.map(StateMap);
+    console.log(addressStateMap);
  }
 
 catch(e)
