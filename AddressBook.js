@@ -159,7 +159,7 @@ try
     let countForDuplicate=0;
     function CheckForDuplicates(contact)
     {
-      if(contact.firstName=="Kretika")
+      if(contact.firstName=="Mayur")
       countForDuplicate++;
       return countForDuplicate;
     }
