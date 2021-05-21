@@ -208,6 +208,44 @@ try
         contactDetailsArray.sort(contactDetails.firstName);
     }
     contactDetailsArray.forEach((contact)=>console.log(contact.toString()));
+    //uc12 sorting by state,zip,city
+    function SortByName()
+    {
+        for (let contactDetails in contactDetailsArray)
+        {
+            contactDetailsArray.sort(contactDetails.firstName);
+        }
+        contactDetailsArray.forEach((contact)=>console.log(contact.toString()));   
+    }
+    function SortByCity()
+    {   for (let contactDetails in contactDetailsArray)
+        {
+            contactDetailsArray.sort(contactDetails.city);
+        }
+        contactDetailsArray.forEach((contact)=>console.log(contact.toString()));
+    }
+    function SortByState()
+    {   for (let contactDetails in contactDetailsArray)
+        {
+            contactDetailsArray.sort(contactDetails.state);
+        }
+        contactDetailsArray.forEach((contact)=>console.log(contact.toString()));
+    }
+    function SortByZip()
+    {   for (let contactDetails in contactDetailsArray)
+        {
+            contactDetailsArray.sort(contactDetails.zip);
+        }
+        contactDetailsArray.forEach((contact)=>console.log(contact.toString()));
+    }
+    console.log("Sorting by firstName");
+    SortByName();
+    console.log("Sort By City")
+    SortByCity();
+    console.log("Sort By State")
+    SortByState();
+    console.log("Sort By Zip")
+    SortByZip();
  }
 
 catch(e)
